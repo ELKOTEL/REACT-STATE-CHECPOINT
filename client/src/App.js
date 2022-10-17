@@ -13,8 +13,8 @@ export default class App extends Component {
         imgsrc:<img src={pic} alt='IMG' width={300}></img> ,     
 
       },        
-      show: false,
-      
+      show: true,
+      counter:0 ,      
     
     }; 
   }
@@ -23,15 +23,14 @@ export default class App extends Component {
     });
   };
   componentDidMount() {
-    this.timerID = setInterval(
-      () => this.tick(),
-      1000
-    );
+    setInterval (() => {
+      this.setState ({ counter:this.state.counter+1});
+  },2);
   }
 
   render() {
     return (
-      <div>
+      <div className='parent'>
         {this.state.show ?
                 <div>
                 <h1>{this.state.person.fullName}</h1> 
