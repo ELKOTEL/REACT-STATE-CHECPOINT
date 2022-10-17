@@ -1,0 +1,29 @@
+
+
+div {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  background-image: linear-gradient(to right, rgb(6, 129, 123) , rgb(187, 230, 226));
+}
+h1 {
+ 
+  color: rgb(206, 187, 22);
+  text-decoration: underline;
+ 
+
+}
+
+
+img{
+  width: 400px;
+}
+button{
+  background-color: rgb(1, 77, 64);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  width: 120px;
+  height: 30PX;
+  color: white;
+}
